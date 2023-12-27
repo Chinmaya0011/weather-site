@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Add additional styling as needed */
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+#main-section {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#cityInput {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, #555, #777);
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#search {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#weatherIcon {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+#temperatureValue {
+  font-size: 36px; /* Adjust the size as needed */
+}
+
+#degree {
+  font-size: 16px; /* Adjust the size as needed */
+  vertical-align: top;
+}
+
+/* Add any additional styling as needed */
+
+
+
+
+#location-additional-info {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+
+}
+.location-info,
+.additional-info {
+  padding: 15px;
+  text-align: left;
+  margin-right: 20px;
+  width: 300px;
+  align-items: flex-start;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-info:hover,
+.additional-info:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.city-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.state,
+.country,
+#timeZone,
+#weatherDescription,
+#windSpeed,
+#feelsLike,
+#humidity,
+#visibility,
+#pressure {
+  color: #666;
+}
+
+#weatherDescription {
+  font-style: italic;
+}
+
+/* Add any additional styling as needed */
+
+
+/* Add any additional styling as needed */
+
+
+
+
+#refreshButton {
+  padding: 10px 20px;
+  background-color: #27d12db0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#refreshButton:hover {
+  background-color: #27d12d; /* Change to your desired hover background color */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Add any additional styling as needed */
+#time {
+  position: fixed;
+  top:200px;
+right: 10px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Box shadow for a subtle effect */
+}
+
+#dateTimeDisplay {
+  font-size: 14px;
+  margin: 0;
+}

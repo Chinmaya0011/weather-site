@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+  <!-- Add your stylesheets and other head elements here -->
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Weather</li>
+        <li>Services</li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+
+    <div id="time">
+      <h1 id="dateTimeDisplay"></h1>
+    </div>
+    
+
+    <div id="main-section">
+      <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="weatherstack()" id="search">Search</button>
+      </div>
+
+      <div class="weather-info">
+        <img alt="Weather Icon" id="weatherIcon">
+        <h5 id="temperatureValue"><span id="degree"></span></h5>
+      </div>
+    </div>
+    
+    <div id="location-additional-info">
+      <div class="location-info">
+        <p id="cityName">City Name <span class="city-name"></span></p>
+        <p class="state">State, <span id="weatherState"></span></p>
+        <p class="country">Country, <span id="weatherCountry"></span></p>
+        <p id="timeZone">Time Zone <span></span></p>
+        <p>Weather Description: <span id="weatherDescription"></span></p>
+      </div>
+
+      <div class="additional-info">
+        <p>Wind Speed: <span id="windSpeed"></span></p>
+        <p>Feels Like: <span id="feelsLike"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Visibility: <span id="visibility"></span></p>
+        <p>Pressure: <span id="pressure"></span></p>
+      </div>
+    </div>
+    
+    <button onclick="weatherstack()" id="refreshButton">Refresh</button>
+  </main>
+
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+
+  <!-- Add your scripts and other body elements here -->
+  <script src="weather.js"></script>
+</body>
+</html>
