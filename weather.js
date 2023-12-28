@@ -34,7 +34,7 @@ cityInput.value=''
 const cityName = enteredCity || data.city;
 
 // Now you can use the 'cityName' value in your API request
-return fetch(`http://api.weatherstack.com/current?access_key=77f315971cffcab996f9471fe437605c&query=${cityName}`);
+return fetch(`https://api.weatherstack.com/current?access_key=77f315971cffcab996f9471fe437605c&query=${cityName}`);
 
     })
     .then(response => response.json())
