@@ -48,7 +48,7 @@ return fetch(`http://api.weatherstack.com/current?access_key=77f315971cffcab996f
 // Assuming data.current.temperature contains the temperature value
 const temperatureValue = document.getElementById('temperatureValue');
 
-temperatureValue.innerHTML =`${data.current.temperature} <span id="degree">o</span>`;
+temperatureValue.innerHTML =`${data.current.temperature}<span id="degree">o</span>`;
 
 
       const cityNameElement = document.getElementById('cityName');
